@@ -35,11 +35,10 @@ function App() {
           {characters.map(character => (
             <div className="aspect-w-1 aspect-h-1">
               <CharacterCard 
-                key={character.id} 
-                character={character} 
-                
-                className="w-full h-full object-cover"
-              />
+              key={character.id} 
+              character={character} 
+              onClick={() => handleCardClick(character)}
+            />
             </div>
           ))}
         </div>
