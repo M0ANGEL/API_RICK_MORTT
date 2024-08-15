@@ -38,11 +38,6 @@ function CharacterCard({ character, onClick }) {
       />
       <div style={texto}>
         <h3 className="text-xl font-semibold text-gray-800"><b>{character.name}</b></h3>
-        <p className="mb-1 text-red-800"><span className="font-semibold"><b>Especie:</b></span> {character.species}</p>
-        <p className="mb-1 text-red-800"><span className="font-semibold"><b>Estado:</b></span> {character.status}</p>
-        <p className="mb-1 text-red-800"><span className="font-semibold"><b>Género:</b></span> {character.gender}</p>
-        <p className="mb-1 text-red-800"><span className="font-semibold"><b>Origen:</b></span> {character.origin.name}</p>
-        <p className="mb-1 text-red-800"><span className="font-semibold"><b>Ubicación:</b></span> {character.location.name}</p>
       </div>
     </div>
   );

@@ -43,6 +43,14 @@ function App() {
             </div>
           ))}
         </div>
+        {/* esta parte del código, lo que hace es darme la información
+        detallada del personaje */}
+        {selectedCharacter && (
+          <CharacterModal 
+            character={selectedCharacter} 
+            onClose={closeModal}
+          />
+        )}
       </div>
     </div>
   );
